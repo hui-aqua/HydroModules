@@ -99,6 +99,7 @@ class netting:
         """
         a1 = point2 - point1
         a2 = point3 - point1
+        drag_vector=np.array(fluid_velocity)/np.linalg.norm(fluid_velocity)
         unit_normal_vector = np.cross(
             a1, a2) / np.linalg.norm(np.cross(a1, a2))
         if np.dot(unit_normal_vector, fluid_velocity) < 0:
@@ -205,11 +206,11 @@ class netting:
                 np.sin(2 * inflow_angle) + p1 * \
                 pow(np.sin(2 * inflow_angle), 2)
         elif self.modelIndex == 'debug':  # from Table 1 in Bi et al., 2014, JFS
-            print('In the debug module, cd and cl are 1.0')
+            # print('In the debug module, cd and cl are 1.0')
             drag_coefficient=1.0
             lift_coefficient=1.0
-
-        return surface_area, drag_coefficient, lift_coefficient, unit_normal_vector, lift_vector
+        # print(drag_coefficient, lift_coefficient, unit_normal_vector, lift_vector)
+        return surface_area, drag_coefficient, lift_coefficient, drag_vector, lift_vector
 
     def cal_aw_ratio(self,
                      list_z):

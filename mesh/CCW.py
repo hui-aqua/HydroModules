@@ -388,6 +388,9 @@ meshinfo = {
     'dwh':dwh,
     'caseInfo':parameters,
     'weight_NT':parameters['Frame']['weight_per_metter']*parameters['CageShape']['cageCircumference']*9.81,
+    'NT':NT,
+    'NN':NN,
+    'BN':BN,
 }
 
 

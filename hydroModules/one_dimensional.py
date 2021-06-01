@@ -346,8 +346,8 @@ class pipe(line):
         """
         num_line = len(self.line_elements)
         if len(u_current)<len(self.line_elements):
-            print(u_current)
-            print("the Length of u_current is not enough for force calculation")
+            # print(u_current)
+            # print("the Length of u_current is not enough for force calculation")
             u_current=np.array([u_current]*len(self.line_elements))
             
         else:

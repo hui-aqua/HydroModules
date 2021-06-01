@@ -16,7 +16,8 @@ class net2netWeak:
     """
     A module that can be use to deal with net to net wake effect.\n
     **note1:** Can only apply to a single fish cage.
-    **note1:** Only work for current velocity.
+    **note2:** Only work for current velocity.
+    **note3** Only work for the net element, not for cable/ pipes
     """
 
     def __init__(self, model_index, initial_node_position, hydro_element, direction, net_solidity=0):
@@ -165,3 +166,40 @@ class net2netWeak:
                 exit()
 
         return total_volume
+    
+    
+    def cal_area_triangle(self,point1, point2, point3):
+        v_ab=point1-point2
+        v_ac=point1-point3
+        return 0.5*np.linalg.norm(np.cross(v_ab,v_ac))
+        
+    def cal_cage_net_area(self,position):
+        """[summary]
+
+        Args:
+            position ([type]): [description]
+        """
+        total_net_area = 0.0
+        for element in self.elements:
+            # loop based on the hydrodynamic elements
+            if len(element) == 3:
+                total_net_area += self.cal_area_triangle(position[element[0]],
+                                                         position[element[1]],
+                                                         position[element[2]])
+            elif len(element) == 4:
+                for i in range(4):
+                    node_3 = [int(k) for k in element]
+                    # delete the i node to make the square to a triangle
+                    node_3.pop(i)
+                    total_net_area += 0.5*self.cal_area_triangle(position[node_3[0]],
+                                                                 position[node_3[1]],
+                                                                 position[node_3[2]])
+            else:
+                print(str(element)+'is not supported by the netting element')
+                exit()
+
+        return total_net_area
+
+
+if __name__ == "__main__":
+    pass

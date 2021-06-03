@@ -19,7 +19,6 @@ import salome
 
 import os
 import sys
-import ast
 import json
 import numpy as np
 from numpy import pi
@@ -78,12 +77,12 @@ parameters={
 # Parameter template finish
 # #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-path_to_setting=os.path.join(os.getcwd(),'setting.py')
+path_to_setting=os.path.join(os.getcwd(),'setting.json')
 if os.path.isfile(path_to_setting):
     print('\nYes, the setting file exists. The default parameters will be overwritted. \n')
-    with open(path_to_setting, 'r') as f:
-        content = f.read()
-        parameters = ast.literal_eval(content)
+    with open(path_to_setting) as json_file:
+        parameters = json.load(json_file)
+    json_file.close()
 else:
     print("Using the default parameters for modelling!!\n")
 
@@ -386,7 +385,6 @@ meshinfo = {
     'fb_netting':fb_netting,
     'dws':dws,
     'dwh':dwh,
-    'caseInfo':parameters,
     'NT':NT,
     'NN':NN,
     'BN':BN,

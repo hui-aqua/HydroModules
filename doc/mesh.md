@@ -12,9 +12,12 @@ In the ```src/mesh``` folder, we provide mesh generator for five commonly used f
 
 There are few rules to make the mesh generation easy.
 
-![Figure19](./figures/Figure19.png)
-
 1. The water level is at Z = 0 m. 
 2. Th water is the domain Z < 0. 
 3. The floating collar is located at the water level.
+
+
+
+![Figure19](./figures/Figure19.png)
+
 

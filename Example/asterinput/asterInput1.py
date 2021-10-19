@@ -53,7 +53,7 @@ rope = hdm.one_dimensional.line("M4",
                                 caseinfo['Frame']['rope_sec_dia'],
                                 caseinfo['Frame']['rope_sec_dia'])
 
-wake = hdm.weak_effect.net2netWeak('factor-0.8',
+wake = hdm.wake_effect.net2netWake('factor-0.8',
                                    meshinfo['Nodes'],
                                    netting.output_hydro_element(),
                                    Uinput,

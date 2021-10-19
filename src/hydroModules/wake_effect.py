@@ -12,7 +12,7 @@ please email: hui.cheng@uis.no \n
 import numpy as np
 
 
-class net2netWeak:
+class net2netWake:
     """
     A module that can be use to deal with net to net wake effect.\n
     **note1:** Can only apply to a single fish cage.
@@ -50,7 +50,7 @@ class net2netWeak:
         self.reduction_factors = np.reshape([1.0]*len(self.elements), (-1, 1))
         self.update_reduction(initial_node_position)
 
-        print("\n net2net weak effect is initialized.\n")
+        print("\n net2net wake effect is initialized.\n")
 
     def __str__(self):
         s0 = "The selected wake model is " + str(self.wake_type) + "\n"

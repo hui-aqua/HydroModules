@@ -7,10 +7,10 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 ![Fig.5](./figures/Fig.5.png)
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\begin{equation}\vec{F_t}=0.5C_{t}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_t}\end{equation})
+![formula](https://render.githubusercontent.com/render/math?math=\quad\Large\vec{F_t}=0.5C_{t}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_t})
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\begin{equation}\vec{F_n}=0.5C_{n}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_n}\end{equation})
+![formula](https://render.githubusercontent.com/render/math?math=\quad\Large\vec{F_n}=0.5C_{n}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_n})
 
 
 
@@ -28,9 +28,9 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 * The unit vectors $\boldsymbol{i_n}$ and $\boldsymbol{i_t}$ which are used to indicate the directions of forces are defined by the following equations ($\boldsymbol{e_i}$ is the unit vector of the cylindrical element):
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\vec{i_t}=\frac{(\vec{U}-\vec{v})\vec{e_i}}{\left|\vec{U}-\vec{v}\right|}\vec{e_i})
+![formula](https://render.githubusercontent.com/render/math?math=\large\vec{i_t}=\frac{(\vec{U}-\vec{v})\vec{e_i}}{\left|\vec{U}-\vec{v}\right|}\vec{e_i})
 
-![formula](https://render.githubusercontent.com/render/math?math=\vec{i}_{n}=\frac{(\vec{U}-\vec{v})}{\left|\vec{U}-\vec{v}\right|}-\vec{i_t})
+![formula](https://render.githubusercontent.com/render/math?math=\large\vec{i}_{n}=\frac{(\vec{U}-\vec{v})}{\left|\vec{U}-\vec{v}\right|}-\vec{i_t})
 
 
 * ![formula](https://render.githubusercontent.com/render/math?math=C_n) and ![formula](https://render.githubusercontent.com/render/math?math=C_t) are the normal drag and tangential force coefficients in the one dimension hydrodynamic models, respectively. These force coefficients are usually obtained from experiments that approximate the ideal conditions of a cylinder in an infinite flow field.

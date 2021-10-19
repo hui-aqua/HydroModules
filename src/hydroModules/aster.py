@@ -11,7 +11,7 @@ please email: hui.cheng@uis.no \n
 """
 import numpy as np
 
-# Three function used by code_aster
+# Functions used by code_aster
 def get_position_aster(table_aster):
     """
     Module public function.\n

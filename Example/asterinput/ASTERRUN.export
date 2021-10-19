@@ -1,0 +1,43 @@
+P actions make_etude
+P aster_root /opt/aster146
+P consbtc oui
+P corefilesize unlimited
+P cpresok RESNOOK
+P debug nodebug
+P display UiSDesktop:0
+P facmtps 1
+P lang en
+P mclient UiSDesktop
+P memjob 5224448
+P memory_limit 5102.0
+P mode interactif
+P mpi_nbcpu 1
+P mpi_nbnoeud 1
+P nbmaxnook 5
+P ncpus 2
+P noeud UiSDesktop
+P nomjob astk
+P origine ASTK 2019.0.final
+P platform LINUX64
+P profastk hui@UiSDesktop:PATH_OF_THE_CURRENT_FOLDER/run.astk
+P protocol_copyfrom asrun.plugins.server.SCPServer
+P protocol_copyto asrun.plugins.server.SCPServer
+P protocol_exec asrun.plugins.server.SSHServer
+P proxy_dir /tmp
+P rep_trav /tmp/hui-UiS-ssw-RANDOMNUMBER
+P serveur UiSDesktop
+P soumbtc oui
+P time_limit 9000060.0
+P tpsjob 150002
+P uclient hui
+P username hui
+P version stable
+A args 
+A memjeveux 637.75
+A tpmax 9000060.0
+F mmed PATH_OF_THE_CURRENT_FOLDER/asterinput/inputMesh.med D  20
+F comm PATH_OF_THE_CURRENT_FOLDER/asterinput/asterInput1.py D  1
+F libr PATH_OF_THE_CURRENT_FOLDER/asterinput/asterInput2.py D  91
+F rmed PATH_OF_THE_CURRENT_FOLDER/asteroutput/paravisresults.rmed R  80
+F resu PATH_OF_THE_CURRENT_FOLDER/asteroutput/reactionforce.txt R  10
+F mess PATH_OF_THE_CURRENT_FOLDER/asteroutput/mess.log R  6

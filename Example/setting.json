@@ -1,29 +1,26 @@
 {
 "Environment":
 {
-    "current":[0.0001,0,0],         
-    "fluidDensity":1025            
+    "current":[0.2,0,0],         
+    "fluidDensity":1000.0          
 },
 "CageShape":
   {
     "origin":[[0,0,0]],             
     "cageCircumference":100.001,    
-    "bottom_top_ratio":0.8,         
+    "bottom_top_ratio":1.0,         
     "cageHeight":10.001,            
     "cageConeHeight":3,             
     "element_length":2.5           
   },
 "Frame":
     {
-    "topringDensity":958,           
     "topring_sec_dia":0.35,         
     "topring_thickness":0.0185,     
-    "bottomring_sec_dia":0.35,      
-    "bottomring_thickness":0.0185,  
-    "bottomring_dep":2.5,           
+    "rope_dep":2.5,                 
     "rope_sec_dia":0.05,            
     "weight_tip":981,               
-    "weight_per_metter":40.001     
+    "weight_per_metter":40.001    
     },    
 "Net":
   {
@@ -32,7 +29,7 @@
     "twineDiameter": 2.85e-3,       
     "meshLength": 25.87e-3,         
     "netYoungmodule":2e9,           
-    "netRho":1140.0              
+    "netRho":1140.0               
   }
 }
 

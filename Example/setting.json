@@ -23,8 +23,7 @@
     "weight_per_metter":40.001    
     },    
 "Net":
-  {
-    "nettingType":"square",         
+  {        
     "Sn": 0.2056,                   
     "twineDiameter": 2.85e-3,       
     "meshLength": 25.87e-3,         

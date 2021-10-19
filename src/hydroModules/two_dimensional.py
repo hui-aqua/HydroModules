@@ -34,7 +34,6 @@ class netting:
         :param hydro_element: [[list]] Unit: [-]. A python list to indicate how the net panel are connected. e.g.:[[p1,p2,p3][p2,p3,p4,p5]...]. If the input net panel contains 4 nodes, it will automaticly decomposed to 3 node net panel.
         :param solidity: [float] Unit: [-]. The solidity of netting.
         :param dw0: [float] Unit: [m]. The diameter of the physical net twines. It is used for the hydrodynamic coefficients.
-        :param rho: [float] Unit: [kg/m3]. The density of netting material. It is used for buoyancy forces. 
         """
         self.modelIndex = str(model_index)
         self.dw0 = dw0

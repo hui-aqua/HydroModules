@@ -2,7 +2,7 @@
 
 The following figure is the results of the example case, showing the deformations of a fish cage due to current forces. 
 
-![](/home/hui/GitHub/HydroModules/doc/figures/demon_deformation.png)
+![Figure 1](./../doc/figures/demon_deformation.png)
 
 ### The file structures:
 

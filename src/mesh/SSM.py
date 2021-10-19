@@ -365,7 +365,7 @@ fb_netting=total_volume_of_twine*9.81*parameters['Environment']['fluidDensity']/
 
 
 # give a name to the mesh
-meshname = 'SSW.med'
+meshname = 'SSM.med'
 
 meshinfo = {
     'Lines_rope': con_rope,

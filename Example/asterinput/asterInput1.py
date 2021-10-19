@@ -26,7 +26,7 @@ json_file.close()
 
 
 dt = 0.1
-duration = 6
+duration =10 
 itimes = int(duration/dt)
 tend = itimes*dt
 Uinput = caseinfo['Environment']['current']

@@ -2,6 +2,7 @@
 
 If you successfully run the [first case](./../Example/README.MD), you may want to change some parameters and give another try.
 
+![Figure 1](./figures/demon_deformation.png)
 
 
 The following parameters are you can change for simulations (You may change more setting, but we recommend you start with the following parameters).

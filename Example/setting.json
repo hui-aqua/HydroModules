@@ -7,7 +7,7 @@
 "CageShape":
   {
     "origin":[[0,0,0]],             
-    "cageCircumference":100.001,    
+    "cageCircumference":120.001,    
     "bottom_top_ratio":1.0,         
     "cageHeight":15.001,            
     "cageConeHeight":3,             

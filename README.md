@@ -1,9 +1,11 @@
 # HydroModules
---- A hydrodynamic module for aquaculture structures
+--- A hydrodynamic module for aquaculture structures.
+
+**The main aim for the development of this module is to provide a controllable and repeatable numerical solution for reliable analyses of aquaculture structures.** 
 
 
 
-> Although considerable numerical programs have been proposed with a large number of publications, most of the proposed numerical program are either  commercial or in-house. In order to promote the availability  and accessibility of numerical simulations for aquaculture structures, a hydrodynamic modules is developed here for conducting time-domain structural analysis of aquaculture structures with [code aster](https://www.code-aster.org/V2/spip.php?rubrique2).
+> Although considerable numerical programs have been proposed with a large number of publications, most of the proposed numerical program are either  commercial or in-house. In order to promote the availability  and accessibility of numerical simulations for aquaculture structures, a hydrodynamic modules is developed here for conducting time-domain structural analysis of aquaculture structures with [code aster](https://www.code-aster.org/V2/spip.php?rubrique2). 
 
 
 
@@ -37,9 +39,7 @@ In order to use this module, you need to install the following packages or progr
 
 ### Run your first case
 
-The Example folder provide a simple setup for a squared fish cage under pure current conditions. 
-
-
+The [Example](./Example/README.MD) folder provide a simple setup for a squared fish cage under pure current conditions. 
 
 1. Open a terminal and change the directory to the `Example`
 
@@ -52,8 +52,7 @@ The Example folder provide a simple setup for a squared fish cage under pure cur
 3. Wait until the job finish. If it shows `exit_code=0` at the end, it means the simulation finish without any error.
 
 ```shell
- 
---------------------------------------------------------------------------------
+ --------------------------------------------------------------------------------
  Copying results
 
 copying .../fort.80...                                                  [  OK  ]
@@ -68,11 +67,11 @@ copying .../fort.6...                                                   [  OK  ]
                                             cpu     system    cpu+sys    elapsed
  ---------------------------------------------------------------------------------
    Preparation of environment              0.00       0.00       0.00       0.00
-   Copying datas                           0.05       0.03       0.08       0.08
-   Code_Aster run                        574.97      12.16     587.13     569.91
+   Copying datas                           0.05       0.02       0.07       0.08
+   Code_Aster run                        823.59      22.92     846.51     812.87
    Copying results                         0.01       0.03       0.04       0.04
  ---------------------------------------------------------------------------------
-   Total                                 575.20      12.26     587.46     570.26
+   Total                                 823.87      23.04     846.91     813.28
  ---------------------------------------------------------------------------------
 
 as_run 2020.0

@@ -1,7 +1,7 @@
 {
 "Environment":
 {
-    "current":[0.2,0,0],         
+    "current":[0.5,0,0],         
     "fluidDensity":1000.0          
 },
 "CageShape":
@@ -9,7 +9,7 @@
     "origin":[[0,0,0]],             
     "cageCircumference":100.001,    
     "bottom_top_ratio":1.0,         
-    "cageHeight":10.001,            
+    "cageHeight":15.001,            
     "cageConeHeight":3,             
     "element_length":2.5           
   },

@@ -6,11 +6,11 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 
 ![Fig.5](./figures/Fig.5.png)
 
-$$
+$
 \boldsymbol{F}_{t}=0.5 C_{t} \rho_{w} d_{w}L\left|\boldsymbol{U}-\boldsymbol{v}\right|^{2} \boldsymbol{i}_{\boldsymbol{t}}
 \\
 \boldsymbol{F}_{n}=0.5 C_{n} \rho_{w} d_{w}L\left|\boldsymbol{U}-\boldsymbol{v}\right|^{2} \boldsymbol{i}_{\boldsymbol{n}}
-$$
+$
 
 * $\rho_{w}$ is the fluid density.
 

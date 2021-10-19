@@ -6,10 +6,12 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 
 ![Fig.5](./figures/Fig.5.png)
 
-![formula](https://render.githubusercontent.com/render/math?math=$\vec{F_t}=0.5C_{t}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_t}$)
+
+![formula](https://render.githubusercontent.com/render/math?math=\begin{equation}\vec{F_t}=0.5C_{t}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_t}\end{equation})
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\vec{F_n}=0.5C_{n}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_n})
+![formula](https://render.githubusercontent.com/render/math?math=\begin{equation}\vec{F_n}=0.5C_{n}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_n}\end{equation})
+
 
 
 
@@ -17,7 +19,7 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 
 * ![formula](https://render.githubusercontent.com/render/math?math=d_w) is diameter of the cylindrical element.
 
-* ![formula](https://render.githubusercontent.com/render/math?math=L) is the length of the cylindrical element.****
+* ![formula](https://render.githubusercontent.com/render/math?math=L) is the length of the cylindrical element.
 
 * ![formula](https://render.githubusercontent.com/render/math?math=\vec{U}) is the undisturbed incoming flow velocity in the upstream of the net panel.
 

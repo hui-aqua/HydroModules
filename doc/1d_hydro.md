@@ -14,7 +14,6 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 
 
 
-
 * ![formula](https://render.githubusercontent.com/render/math?math=\rho_{w}) is the fluid density.
 
 * ![formula](https://render.githubusercontent.com/render/math?math=d_w) is diameter of the cylindrical element.
@@ -25,12 +24,12 @@ For the one dimensional hydrodynamic models, the forces on netting are calculate
 
 * ![formula](https://render.githubusercontent.com/render/math?math=\vec{v}) is the velocity of the structure.
 
-* The unit vectors $\boldsymbol{i_n}$ and $\boldsymbol{i_t}$ which are used to indicate the directions of forces are defined by the following equations ($\boldsymbol{e_i}$ is the unit vector of the cylindrical element):
+* The unit vectors ![formula](https://render.githubusercontent.com/render/math?math=\vec{i_n}) $ and ![formula](https://render.githubusercontent.com/render/math?math=\vec{i_t}) $ which are used to indicate the directions of forces are defined by the following equations (![formula](https://render.githubusercontent.com/render/math?math=\vec{e_i}) is the unit vector of the cylindrical element):
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\large\vec{i_t}=\frac{(\vec{U}-\vec{v})\vec{e_i}}{\left|\vec{U}-\vec{v}\right|}\vec{e_i})
+![formula](https://render.githubusercontent.com/render/math?math=\Large\vec{i_t}=\frac{(\vec{U}-\vec{v})\vec{e_i}}{\left|\vec{U}-\vec{v}\right|}\vec{e_i})
 
-![formula](https://render.githubusercontent.com/render/math?math=\large\vec{i}_{n}=\frac{(\vec{U}-\vec{v})}{\left|\vec{U}-\vec{v}\right|}-\vec{i_t})
+![formula](https://render.githubusercontent.com/render/math?math=\Large\vec{i}_{n}=\frac{(\vec{U}-\vec{v})}{\left|\vec{U}-\vec{v}\right|}-\vec{i_t})
 
 
 * ![formula](https://render.githubusercontent.com/render/math?math=C_n) and ![formula](https://render.githubusercontent.com/render/math?math=C_t) are the normal drag and tangential force coefficients in the one dimension hydrodynamic models, respectively. These force coefficients are usually obtained from experiments that approximate the ideal conditions of a cylinder in an infinite flow field.
@@ -48,13 +47,13 @@ rope = hdm.one_dimensional.line("M4",
                                 caseinfo['Frame']['rope_sec_dia'])
 ```
 
-> **model_index**: [string] Unit: [-]. To indicate the model function, e.g.: 'M1', 'M2', 'M3'.
+> **model_index**: [string] [-]. To indicate the model function, *e.g.*, 'M1', 'M2', 'M3'.
 >
-> **hydro_element**: [list] Unit: [-]. A python list to indicate how the lines are connected.
+> **hydro_element**: [list] [-]. A python list to indicate how the lines are connected, *e.g.*., [[0,1],[1,2],[2,1]]
 >
-> **solidity**: [float] Unit: [-]. The solidity of netting.
+> **solidity**: [float] [-]. The solidity of netting.
 >
-> **dw0**: [float] Unit: [m]. The diameter of the physical net twines. It is used for the hydrodynamic coefficients.
+> **dw0**: [float] [m]. The diameter of the physical net twines. It is used for the hydrodynamic coefficients.
 > 
-> **dwh**: [float] Unit: [m]. The hydrodynamic diameter of the numerical net twines. It is used for the force calculation (reference area).
+> **dwh**: [float] [m]. The hydrodynamic diameter of the numerical net twines. It is used for the force calculation (reference area).
 

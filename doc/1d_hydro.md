@@ -2,14 +2,14 @@
 
 ### Explanations of model
 
-For the one dimensional hydrodynamic models, the forces on netting are calculated based on individual twines. The twines are taken as a cylindrical elements. In practice, the force is usually decomposed into two components: normal drag force $F_n$ and tangential drag force ***F_t*** (Cheng *et al*., 2020)
+For the one dimensional hydrodynamic models, the forces on netting are calculated based on individual twines. The twines are taken as a cylindrical elements. In practice, the force is usually decomposed into two components: normal drag force ![formula](https://render.githubusercontent.com/render/math?math=\vec{F_n}) and tangential drag force ![formula](https://render.githubusercontent.com/render/math?math=\vec{F_t}) (Cheng *et al*., 2020)
 
 ![Fig.5](./figures/Fig.5.png)
 
-![formula](https://render.githubusercontent.com/render/math?math=\boldsymbol{F}_{t}=0.5C_{t}\rho_{w}d_{w}L\left|\boldsymbol{U}-\boldsymbol{v}\right|^{2}\boldsymbol{i}_{\boldsymbol{t}})
+![formula](https://render.githubusercontent.com/render/math?math=$\vec{F_t}=0.5C_{t}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_t}$)
 
 
-![formula](https://render.githubusercontent.com/render/math?math=\boldsymbol{F}_{n}=0.5C_{n}\rho_{w}d_{w}L\left|\boldsymbol{U}-\boldsymbol{v}\right|^{2}\boldsymbol{i}_{\boldsymbol{n}})
+![formula](https://render.githubusercontent.com/render/math?math=\vec{F_n}=0.5C_{n}\rho_{w}d_{w}L\left|\vec{U}-\vec{v}\right|^{2}\vec{i_n})
 
 
 
@@ -30,6 +30,9 @@ $$ -->
 * $\boldsymbol{v}$ is the velocity of the structure.
 
 * The unit vectors $\boldsymbol{i_n}$ and $\boldsymbol{i_t}$ which are used to indicate the directions of forces are defined by the following equations ($\boldsymbol{e_i}$ is the unit vector of the cylindrical element):
+
+
+![formula](https://render.githubusercontent.com/render/math?math=\begin{gathered}\boldsymbol{i_t}=\frac{(\boldsymbol{U-v})\boldsymbol{e_i}}{\left|\boldsymbol{U-v}\right|}\boldsymbol{e_i}\\\\\boldsymbol{i}_{n}=\frac{(\boldsymbol{U-v})}{\left|\boldsymbol{U-v}\right|}-\boldsymbol{i_t}\end{gathered})
 
 $$
 \begin{gathered}

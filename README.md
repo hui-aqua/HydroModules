@@ -4,7 +4,6 @@
 **The main aim for the development of this module is to provide a controllable and repeatable numerical solution for reliable analyses of aquaculture structures.** 
 
 
-
 > Although considerable numerical programs have been proposed with a large number of publications, most of the proposed numerical program are either  commercial or in-house. In order to promote the availability  and accessibility of numerical simulations for aquaculture structures, a hydrodynamic modules is developed here for conducting time-domain structural analysis of aquaculture structures with [code aster](https://www.code-aster.org/V2/spip.php?rubrique2). 
 
 
@@ -25,7 +24,7 @@ In order to use this module, you need to install the following packages or progr
 
   If not, you need to change Line 21 in [`run.sh`](./Example/run.sh) and Line 2 in [`ASTERRUN.export`](./Example/asterinput/ASTERRUN.export) according to your environments.
 
-* [salome_meca 2019.0.3](https://www.code-aster.org/spip.php?article303)
+* [salome_meca 2019.0.3 (or higher)](https://www.code-aster.org/spip.php?article303)
 
   Please check if `salome` located at the following default installation path:
 
@@ -101,5 +100,11 @@ Change the variable back to the default value....>>>>>>
 
 ### Publications 
 
-Cheng, H., Li, L., Aarsæther, K.G. and Ong, M.C., 2020. Typical hydrodynamic models for aquaculture nets: A comparative study under pure current conditions. *Aquacultural Engineering*, *90*, p.102070.
+  1. Cheng, H., Li, L., Aarsæther, K. G., & Ong, M. C. (2020). Typical hydrodynamic models for aquaculture nets: A comparative study under pure current conditions. Aquacultural Engineering, 90, 102070. https://doi.org/10.1016/j.aquaeng.2020.102070
+
+  2. Cheng, H., Ong, M. C., Li, L., & Chen, H. (Under review). Development of a coupling algorithm for fluid-structure interaction analysis of flexible nettings in fluid. Ocean Engineering.
+
+  3. Mjåtveit, M. A., Cheng, H., Ong, M. C., & Lee, J. (Under review). Numerical study of two typical gravity-based fish cages with different dimensions under pure current conditions. Aquacultural Engineering.
+
+  4. Cheng, H., Li, L., & Ong, M. C. (Under review). Structural responses of gravity type fish cages under pure current conditions. Aquaculture.
 

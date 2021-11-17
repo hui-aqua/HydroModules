@@ -140,7 +140,7 @@ model = AFFE_MODELE(AFFE=(_F(GROUP_MA=('twines', 'ropes'),
 # define element geometrical properties
 elemprop = AFFE_CARA_ELEM(CABLE=(_F(GROUP_MA=('twines'),
                                     N_INIT=10.0,
-                                    SECTION=0.25*np.pi*pow(meshinfo['dws'], 2)),  # 10twines as a seam
+                                    SECTION=0.25*np.pi*pow(meshinfo['dws'], 2)), 
                                  _F(GROUP_MA=('ropes'),
                                     N_INIT=40.0,
                                     SECTION=0.25*np.pi*pow(caseinfo['Frame']['rope_sec_dia'], 2)),
@@ -153,7 +153,6 @@ elemprop = AFFE_CARA_ELEM(CABLE=(_F(GROUP_MA=('twines'),
                                   ),
                           MODELE=model)
 # material base
-# netting according to SCTsetting.py
 net = DEFI_MATERIAU(CABLE=_F(EC_SUR_E=0.0001),
                     ELAS=_F(E=caseinfo['Net']['netYoungmodule'],
                             NU=0.3,  # No meaning for 1D element

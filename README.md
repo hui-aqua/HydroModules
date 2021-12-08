@@ -1,4 +1,4 @@
-# HydroModules
+# UiS-aqua
 --- A hydrodynamic module for aquaculture structures.
 
 **The main aim for the development of this module is to provide a controllable and repeatable numerical solution for reliable analyses of aquaculture structures.** 

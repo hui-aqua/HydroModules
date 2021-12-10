@@ -102,7 +102,7 @@ Change the variable back to the default value....>>>>>>
 
   1. Cheng, H., Li, L., Aarsæther, K. G., & Ong, M. C. (2020). Typical hydrodynamic models for aquaculture nets: A comparative study under pure current conditions. Aquacultural Engineering, 90, 102070. https://doi.org/10.1016/j.aquaeng.2020.102070
 
-  2. Cheng, H., Ong, M. C., Li, L., & Chen, H. (Under review). Development of a coupling algorithm for fluid-structure interaction analysis of flexible nettings in fluid. Ocean Engineering.
+  2. Cheng, H., Ong, M. C., Li, L., & Chen, H. (2022). Development of a coupling algorithm for fluid-structure interaction analysis of flexible nettings in fluid. Ocean Engineering, 243, 110208. https://doi.org/10.1016/j.oceaneng.2021.110208
 
   3. Mjåtveit, M. A., Cheng, H., Ong, M. C., & Lee, J. (Under review). Numerical study of two typical gravity-based fish cages with different dimensions under pure current conditions. Aquacultural Engineering.
 

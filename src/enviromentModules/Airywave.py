@@ -1,4 +1,14 @@
 """
+License
+This file is part of UiS-Aqua.
+
+UiS-Aqua is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+UiS-Aqua is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with UiS-Aqua. If not, see <https://www.gnu.org/licenses/>.
+
+
 -------------------------------------------\n
 -         University of Stavanger          \n
 -         Hui Cheng (PhD student)          \n
@@ -38,7 +48,8 @@ class Airywave:
         # 1 Calculation
         # wave length
         alpha = [1, 0.666, 0.445, -0.105, 0.272]
-        omega_ba = 4.0 * pow(pi, 2) * water_depth / self.gravity / pow(wave_period, 2)
+        omega_ba = 4.0 * pow(pi, 2) * water_depth / \
+            self.gravity / pow(wave_period, 2)
         f_omega = 0.0
         for index, item in enumerate(alpha):
             f_omega += item * pow(omega_ba, index)
@@ -47,9 +58,11 @@ class Airywave:
         # wave number
         self.wave_k = 2 * pi / self.wave_Length
         # angular frequency
-        self.omega = pow(self.gravity * self.wave_k * np.tanh(self.wave_k * self.water_Depth), 0.5)
+        self.omega = pow(self.gravity * self.wave_k *
+                         np.tanh(self.wave_k * self.water_Depth), 0.5)
         # phase velocity
-        self.wave_phase_velocity = pow(self.gravity / self.wave_k * np.tanh(self.wave_k * self.water_Depth), 0.5)
+        self.wave_phase_velocity = pow(
+            self.gravity / self.wave_k * np.tanh(self.wave_k * self.water_Depth), 0.5)
 
         # 2 for easy calculation
         self.pi_h_t = pi * wave_height / wave_period
